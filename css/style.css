@@ -1,0 +1,155 @@
+* {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    .Tablo{
+      width: 200px;
+      height: 300px;
+    } 
+    header {
+      background-color: lightgrey; 
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: black;
+
+
+    }
+
+    
+   .jobbszoveg {
+      float: right;
+      width: 70%;
+      height: auto; 
+      background: #ccc;
+      padding: 20px;
+    }
+
+    
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 30%;
+      background-color: #f1f1f1;
+      height: auto; }
+
+
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+  
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+
+        .active {
+          background-color: #c91d1dc4;
+        }
+        .KepRacs{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr));
+      grid-gap: 1rem;
+      margin-left: 1rem;
+      margin-right:1rem;
+    }
+
+    .Kép_Layer .kep{
+      height: 10rem;
+      background-color: rgba(0,0,0,.03);
+      text-align: center;
+    }
+    .Kép_Layer .kep img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .Kép_Layer .kep:hover{
+      -webkit-box-shadow: 0 2px 12px 0 rgba(0,0,0,.3);
+        -moz-box-shadow:    0 2px 12px 0 rgba(0,0,0,.3);
+        box-shadow: 0 2px 12px 0 rgba(0,0,0,.3);
+
+    }
+    .Kép_Layer p{
+      font-size: 1rem;
+      padding-top: .4rem;
+      text-align: center;
+    }
+
+  @media screen and (max-width: 900px) {
+    .Munkáim .oszlop {
+      width: 50%;
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .Munkáim .oszlop {
+      width: 100%;
+    }
+  }
+.Center{text-align: center;}
+h2{
+
+  font-size: 40px;
+}
+.jobbszele {
+    float: right;
+    width: 50%;
+    height: auto; 
+    background: #ccc;
+    
+  }
+  .balszele {
+    float: left;
+   
+    width: 50%;
+    background: #ccc;
+    height: auto; 
+  }
